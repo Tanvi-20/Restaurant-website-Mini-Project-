@@ -1,0 +1,118 @@
+body{
+	font-family: 'Grandstander', cursive;
+	line-height: 1.5;
+	background-size: cover;
+	background-image: url('dessert.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	box-sizing: border-box;
+}
+
+.lst-container{
+	display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 25px;
+  margin-top: 30px;
+}
+
+.lst{
+	max-width:400px;
+	border-radius:20px;
+	margin:auto;
+	background:rgba(0,0,0,.9);
+	box-sizing:border-box;
+	padding:40px;
+	color:white;
+	margin:60px;
+}
+
+h2{
+	color: orange;
+}
+
+.lst  li>span{
+	float: right;
+}
+
+@media(max-width: 992px){
+  main .lst-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media(max-width: 767px){
+  main .lst-container{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+  }
+ 
+}
+
+@media(max-width: 500px){
+ main .lst-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+/*-------Nav Bar---------------*/
+nav a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0; 
+}
+.wel{
+  color:white; 
+  font-size:24px; 
+  justify-content: flex-start; 
+  position: fixed;
+    left: 0; 
+    padding-left: 35px ;
+}
+.wel .fas{
+    font-size: 30px;
+    color: orange;
+    margin-right:20px;
+}
+/*-------End of Navbar--------*/
+
+/*----------Footer--------------*/
+
+.footer {
+  background: #000;
+  text-align: center;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 17px;
+}
+
+/*--------End of Footer---------*/
+
+@media screen and (max-width: 972px)
+{
+  .wel{
+    font-size:20px;
+    padding-left:30px;
+  }
+
+  .wel .fas{
+  font-size: 25px;
+  color: orange;
+  margin-right:17px;
+}
+
+@media screen and (max-width: 576px)
+{
+  .wel{
+    font-size:15px;
+    padding-left:15px;
+  }
+  .wel .fas{
+  font-size: 15px;
+  color: orange;
+  margin-right:10px;
+}

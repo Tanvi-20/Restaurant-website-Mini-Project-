@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Grandstander', cursive;
+
+}
+
+body{
+    line-height: 1.5;
+}
+.title-text
+{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+#hero{
+    display:table;
+    width: 100%;
+    height: 10vh;
+    background: url(https://thumbs.dreamstime.com/b/indian-food-curry-butter-chicken-palak-paneer-chiken-tikka-biryani-vegetable-curry-papad-dal-palak-sabji-jira-alu-rice-138550014.jpg) top center;
+    background-size: cover;
+}
+@media (min-width: 50px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+#hero .hero-logo{
+    margin:20px;
+}
+#hero .hero-logo img{
+    max-width: 50%;
+}
+#hero .hero-container{
+    background: rgba(18,19,19, 0.4);
+    display: table-cell;
+    margin:0;
+    padding:0;
+    text-align: center;
+    vertical-align: middle;
+}
+#hero h1{
+    margin: 30px 0 10px 0;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media (max-width: 768px){
+    #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+#hero h2{
+    color:#fff;
+    margin-bottom: 50px;
+}
+@media (max-width: 768px){
+    #hero h2{
+        font-size:24px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    
+}
+#hero .actions a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+} 
+#hero .main-1{
+    background: #eb9a03;
+    border: 2px solid #eb9a03;
+    color:#000;
+    font-weight: bold;
+}
+#hero .main-1:hover{
+    background: none;
+    border: 2px solid #fff;
+    color:#fff;
+    text-decoration: none;
+}
+#hero .main-2{
+    border: 2px solid #fff;
+    color:#fff;
+}
+#hero .main-2:hover{
+    background: #eb9a03;
+    border: 2px solid #eb9a03;
+    text-decoration: none;
+}
+/*===============OFFERS=======*/
+
+.section-title h3{
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.deal-box{
+    padding: 30px;
+    background: #eb9a03;
+    margin-bottom: 85px;
+    border-radius: 10px 100px;
+    box-shadow: 0 7px 10px #eb9a03;
+    text-align: center;
+}
+
+.deal-box h2{
+    font-weight: 700;
+    font-size: 32px;
+    font-weight: 30;
+    margin-top: 20px;
+
+}
+
+.deal-box img{
+    border-radius: 50px;
+}
+
+/*-----------Nav Bar---------------*/
+
+nav a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+}
+.wel{
+    color:white; 
+    font-size:24px; 
+    justify-content: flex-start; 
+    position: fixed;
+    left: 0; 
+    padding-left: 35px ;
+}
+.wel .fas{
+    font-size: 30px;
+    color: orange;
+    margin-right:20px;
+}
+/*-----------End of Navbar--------*/
+
+/*----------Footer--------------*/
+.footer {
+  padding-bottom: 1px;
+  background: #000;
+  text-align: center;
+}
+.footer .text {
+  padding-top: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+}
+/*--------End of Footer---------*/
+@media screen and (max-width: 972px)
+{
+    .wel{
+        font-size:20px;
+        padding-left:30px;
+    }
+
+    .wel .fas{
+    font-size: 25px;
+    color: orange;
+    margin-right:17px;
+}
+
+@media screen and (max-width: 576px)
+{
+    .wel{
+        font-size:15px;
+        padding-left:15px;
+    }
+    .wel .fas{
+    font-size: 15px;
+    color: orange;
+    margin-right:10px;
+}
