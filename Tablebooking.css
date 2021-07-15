@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Grandstander", cursive;
+  background: url("banner-image.jpg") center/cover no-repeat;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/*-----------Nav Bar---------------*/
+
+nav a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+}
+.wel{
+  color:white; 
+  font-size:24px; 
+  justify-content: flex-start; 
+  position: fixed;
+    left: 0; 
+    padding-left: 35px ;
+}
+.wel .fas{
+    font-size: 30px;
+    color: orange;
+    margin-right:20px;
+}
+/*-----------End of Navbar--------*/
+
+/*-----------Table Booking--------*/
+.container1 {
+  background: rgba(0, 0, 0, 0.8);
+  margin: 150px;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.container-time {
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 50px;
+  outline: 3px dashed #998100;
+  outline-offset: -30px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.heading-days {
+  font-size: 30px;
+}
+
+.heading-days,
+p {
+  color: orange;
+}
+
+.heading-phone {
+  font-size: 20px;
+  color: white;
+}
+
+.container-form {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: black;
+}
+
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+form p {
+  font-weight: 600;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select {
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background:rgba(0,0,0,0.1);
+  border: none;
+  color: white;
+  border-bottom: 2px solid orange;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: orange;
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*---End of Table Booking------*/
+
+/*----------Footer--------------*/
+.footer {
+  padding-bottom: 1px;
+  background: #000;
+  text-align: center;
+}
+.footer .text {
+  padding-top: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+}
+/*--------End of Footer---------*/
+
+/* Tablets and Smaller */
+@media (max-width: 950px) {
+  .container1 {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .container-form {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 500px) {
+  .container1 {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 380px;
+    margin: 1rem auto;
+  }
+
+  .container-time {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 50px;
+    outline: 3px dashed #998100;
+    outline-offset: -30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container-form {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 972px)
+{
+  .wel{
+    font-size:20px;
+    padding-left:30px;
+  }
+
+  .wel .fas{
+  font-size: 25px;
+  color: orange;
+  margin-right:17px;
+}
+
+@media screen and (max-width: 576px)
+{
+  .wel{
+    font-size:15px;
+    padding-left:15px;
+  }
+  .wel .fas{
+  font-size: 15px;
+  color: orange;
+  margin-right:10px;
+}

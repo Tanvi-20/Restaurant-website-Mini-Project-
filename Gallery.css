@@ -1,0 +1,102 @@
+body{
+	background-color: orange;
+	font-family: "Grandstander", cursive;
+}
+
+h1{
+	font-size: 2.1 rem;
+	line-height: 1.4;
+	text-align: center;
+	color: #333;
+	margin-top: 20px;
+}
+
+.maindiv{
+	width: 60%;
+	height: 400px;
+	margin-top:30px; 
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	background-image: url('gallery1.jpg');
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px 15px white;
+	animation: slider 36s infinite linear;
+}
+
+@keyframes slider{
+	0%{ background-image: url('gallery1.jpg'); }
+
+	17%{ background-image: url('gallery2.jpg'); }
+
+	30%{ background-image: url('gallery3.jpg'); }
+
+	47%{ background-image: url('gallery4.jpg'); }
+
+	64%{ background-image: url('gallery5.jpg'); }
+
+	82%{ background-image: url('gallery6.jpg'); }
+}
+
+/*-----------Nav Bar---------------*/
+
+nav a:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+}
+.wel .fas{
+    font-size: 30px;
+    color: orange;
+    margin-right:20px;
+}
+.wel{
+	color:white; 
+	font-size:24px; 
+	justify-content: flex-start; 
+	position: fixed;
+  	left: 0; 
+  	padding-left: 35px ;
+}
+
+/*-----------End of Navbar--------*/
+
+/*----------Footer--------------*/
+.footer {
+	margin-top: 560px;
+  padding-bottom: 0.3px;
+  background: #000;
+  text-align: center;
+}
+.footer .text {
+  padding-top: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+}
+/*--------End of Footer---------*/
+@media screen and (max-width: 972px)
+{
+	.wel{
+		font-size:20px;
+		padding-left:30px;
+	}
+
+	.wel .fas{
+	font-size: 25px;
+	color: orange;
+	margin-right:17px;
+}
+
+@media screen and (max-width: 576px)
+{
+	.wel{
+		font-size:15px;
+		padding-left:15px;
+	}
+	.wel .fas{
+	font-size: 15px;
+	color: orange;
+	margin-right:10px;
+}
